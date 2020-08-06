@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <meta charset = "UTF-8"/>
+    <meta name = "viewport" content = "width=device-width,minimum-scale=1,initial-scale=1"/>
+    <title>Tags HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css"/>
+    <style>
+        .tag_style p:last-child {
+            color: blue;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class = "tag_a">
+        <b>A (Insere um link)</b><br/><br/>
+        <a href = "https://www.google.com">Link do Google</a>
+    </div>
+
+    <div class = "tag_abbr">
+        <b>ABBR (Define o significado de uma palavra abreviada ou sigla)</b><br/><br/>
+        <p>A sigla <abbr title="Organização das Nações Unidas">ONU</abbr> signfica Organização das Nações Unidas.</p>
+    </div>
+
+    <div class = "tag_address">
+        <b>ADDRESS (Indica um endereço no código)</b><br/><br/>
+        <address>
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+    </div>
+
+    <div class = "tag_area">
+        <b>AREA (Define uma área dentro de um mapa de imagem)</b><br/><br/>
+        <p>Área superior esquerda e inferior direita clicáveis.<br/></p>
+        <img src="assets/images/kurisu.jpg" alt="Kurisu" usemap="#makisekurisu" width="300" height="300"/>
+
+        <map name="makisekurisu">
+            <area shape="rect" coords="0, 0, 150, 150" alt="quadrado" href="https://www.google.com">
+            <area shape="rect" coords="150, 150, 300, 300" alt="circulo" href="https://www.google.com">
+        </map>
+                
+    </div>
+
+    <div class = "tag_article">
+        <b>ARTICLE (Utilizada para marcar conteúdo específico em um site, por exemplo: uma postagem ou comentário)</b><br/><br/>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        
+    </div>
+
+    <div class = "tag_aside">
+        <b>ASIDE (Utilizada para marcar conteúdo a parte do conteúdo principal)</b><br/><br/>
+
+        <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family! (Conteúdo principal)</p>
+
+        <aside>
+            <h4>Epcot Center (aside)</h4>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </aside>        
+    </div>
+
+    <div class = "tag_audio">
+        <b>ÁUDIO (Insere um arquivo de áudio)</b><br/><br/>
+        <audio controls>
+            <source src="assets/media/alloutlife.mp3" type="audio/mp3">
+            Seu navegador não suporta áudio.
+        </audio>        
+    </div>
+
+    <div class = "tag_b">
+        <b>B (Marca um texto em negrito)</b><br/><br/>
+        <b>Texto em Negrito</b>        
+    </div>
+
+    <div class = "tag_base">
+        <b>BASE (Utilizada para especificar o endereço padrão utilizado em um endereço relativo. Deve ser colocada na seção head do documento)</b><br/><br/>
+        Utilizada para especificar o endereço padrão utilizado em um endereço relativo. Deve ser colocada na seção head do documento.        
+    </div>
+
+    <div class = "tag_bdi">
+        <b>BDI (Bi Directional Isolation - Utilizada para isolar uma palavra ou trecho que possui uma direção diferente do resto do texto)</b><br/><br/>
+        <ul>
+            <li>User <bdi>hrefs</bdi>: 60 points</li>
+            <li>User <bdi>jdoe</bdi>: 80 points</li>
+            <li>User <bdi>إيان</bdi>: 90 points</li>
+        </ul>        
+    </div>
+
+    <div class = "tag_bdo">
+        <b>BDO (Bi Dirrectional Override - Determina o sentido de escrita do texto, direita para a esquerda (RTL) ou esquerda para a direita (LTR))</b><br/><br/>
+        <p>Rodrigo Oliveira da Silva</p>
+        <p><bdo dir = "rtl">Rodrigo Oliveira da Silva</bdo></p>
+    </div>
+
+    <div class = "tag_blockquote">
+        <b>BLOCKQUOTE (Marca um trecho de texto que foi retirado de outra fonte)</b><br/><br/>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>
+    </div>
+
+    <div class = "tag_body">
+        <b>BODY (Corpo do documento)</b><br/><br/>
+        <p>Todo o conteúdo da tag body será renderizado e exibido na tela. É a tag que representa todo o corpo do documento.</p>
+    </div>
+
+    <div class = "tag_br">
+        <b>BR (Quebra de linha)</b><br/><br/>
+        1<br/><br/>
+        2<br/><br/>
+        3<br/><br/>
+        4<br/><br/>
+        5<br/><br/>        
+    </div>   
+
+    <div class = "tag_button">
+        <b>BUTTON (Insere um botão no documento)</b><br/><br/>
+        <button type = "button">Clique Aqui</button>      
+    </div>   
+
+    <div class = "tag_canvas">
+        <b>CANVAS (Marca um espaço onde é possível desenhar elementos específicos,gráficos, formas geométricas e imagens, geralmente através de javascript)</b><br/><br/>
+        <canvas id="myCanvas">Seu navegador não suporta a tag canvas.</canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 80, 100);
+        </script>     
+    </div>  
+    
+    <div class = "tag_caption">
+        <b>CAPTION (Insere um título em uma tabela)</b><br/><br/>
+        <table>
+            <caption>Título (Caption)</caption>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$50</td>
+            </tr>
+        </table>     
+    </div> 
+    
+    <div class = "tag_cite">
+        <b>CITE (Marca o título de uma obra (Poema, música, filme, livro e etc.)</b><br/><br/>
+        <p><cite>Mosa Lisa</cite> por Leonardo Da Vinci. Iniciada em 1503.</p>
+        <p><cite>Fundamentos do HTML5 e CSS3</cite> por Maujor, 2015.</p>      
+    </div>   
+
+    <div class = "tag_code">
+        <b>CODE (Marca um trecho de código, ou seja, uma palavra reconhecida em linguagens de programação)</b><br/><br/>
+        <p>Uma <code>String</code> é uma sequência de caracteres.</p>
+        <p>Uma <code>Div</code> é uma área onde são inseridos elementos <code>HTML</code>.</p>        
+    </div>   
+
+    <div class = "tag_col_tag_colgroup">
+        <b>COL/COLGROUP (Utilizadas para personalizar colunas especificas em uma tabela)</b><br/><br/>
+        <table>
+            <colgroup>
+              <col span="2" style="background-color:red">
+              <col style="background-color:yellow">
+            </colgroup>
+            <tr>
+              <th>ISBN</th>
+              <th>Title</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>3476896</td>
+              <td>My first HTML</td>
+              <td>$53</td>
+            </tr>
+            <tr>
+              <td>5869207</td>
+              <td>My first CSS</td>
+              <td>$49</td>
+            </tr>
+          </table>        
+    </div>  
+
+    <div class = "tag_data">
+        <b>DATA (Utilizada para associar um texto a uma informação, como um número de identificação, essa informação não é exibida para o usuário e é utilizada apenas internamente)</b><br/><br/>
+
+        <ul>
+            <li><data value="21053">Cherry Tomato</data></li>
+            <li><data value="21054">Beef Tomato</data></li>
+            <li><data value="21055">Snack Tomato</data></li>
+        </ul>        
+    </div>    
+
+    <div class = "tag_datalist">
+        <b>DATALIST (Determina uma lista de opções predefinidas em um input list)</b><br/><br/>
+
+        <form action="/action_page.php" method="get">
+            <label for="browser">Selecione o seu navegador:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <input type="submit">
+        </form>       
+    </div> 
+    
+    <div class = "tags_dd_dl_dd">
+        <b>DD DL DT (Utilizadas para criar uma lista de definições e valores)</b> <br/><br/>
+        <dl>
+            <dt>Sucos</dt>
+                <dd>Laranja</dd>
+                <dd>Limão</dd>
+            <dt>Sobremesa</dt>
+                <dd>Bolo</dd>
+                <dd>Pudim</dd>
+        </dl>
+    </div>
+
+    <div class = "tag_del">
+        <b>DEL (Risca um trecho do texto indicando que ele foi deletado)</b> <br/><br/>
+        <p>Eu sou formado como <del>Engenheiro espacial</del> Técnico em mecatrônica.</p>
+    </div>
+
+    <div class = "tag_details">
+        <b>DETAILS (Define um conteúdo que o usuário pode clicar para exibir informações adicionais)</b> <br/><br/>
+        <details>
+            <summary>Epcot Center</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </details>
+    </div>
+
+    <div class = "tag_dfn">
+        <b>DFN (Definition Element - Especifíca um termo que vai ser definido no conteúdo a seguir)</b> <br/><br/>
+        <p><dfn>HTML</dfn> é a principal linguagem para criação de páginas web.</p>
+    </div>
+
+    <div class = "tag_dialog">
+        <b>DIALOG (Cria uma caixa de diálogo)</b> <br/><br/>
+        <dialog open>Caixa de diálogo</dialog>
+    </div>
+
+    <div class = "tag_div">
+        <b>DIV (Cria uma área que funciona como um container para outros elementos)</b> <br/><br/>
+        <div class = "div1">Div 1</div>
+        <div class = "div2">Div 2</div>
+        <div class = "div3">Div 3</div>
+    </div>
+
+    <div class = "tag_em">
+        <b>EM (Marca um trecho de texto com forte enfâse e itálico)</b> <br/><br/>
+        <p>Meu nome é <em>Rodrigo Oliveira da Silva</em></p>
+    </div>
+
+    <div class = "tag_fieldset">
+        <b>FIELDSET (Agrupa elementos semelhantes em um formulário, desenhando um contorno)</b> <br/><br/>
+        <form>
+            <fieldset>
+                <legend>Pessoa:</legend>
+                <input type="text" placeholder="Nome"><br><br>
+                <input type="text" placeholder = "Sobrenome"><br><br>
+                <input type="email" placeholder = "Email"><br><br>
+                <input type="date"><br><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class = "tag_figcaption_figure">
+        <b>FIGCAPTION/FIGURE (Utilizadas para inserir uma imagem com legenda)</b> <br/><br/>
+        <figure>
+            <img src="assets/images/kurisu.jpg" alt="kurisu" width = "200" height = "200"/>
+            <figcaption>Makise Kurisu (Stein's Gate)</figcaption>
+        </figure>
+    </div>
+
+    <div class = "tag_footer">
+        <b>FOOTER (Utilizada para criar o rodapé da página)</b> <br/><br/>
+        
+        <p>Normalmente são inseridas informações de contato e informações do desenvolvedor no rodapé da página.</p>
+    </div>
+
+    <div class = "tag_form">
+        <b>FORM (Cria um formulário para inserção e envio de informações)</b> <br/><br/>
+        <form>
+            <fieldset>
+                <legend>Formulário</legend>
+                <fieldset>
+                    <legend>Pessoa 1:</legend>
+                    <input type="text" placeholder="Nome"><br><br>
+                    <input type="text" placeholder = "Sobrenome"><br><br>
+                    <input type="email" placeholder = "Email"><br><br>
+                    <input type="date"><br><br>                
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Pessoa 2:</legend>
+                    <input type="text" placeholder="Nome"><br><br>
+                    <input type="text" placeholder = "Sobrenome"><br><br>
+                    <input type="email" placeholder = "Email"><br><br>
+                    <input type="date"><br><br>
+                </fieldset>
+                <br/><br/>
+                <input type="submit" value="Enviar">
+            </fieldset>            
+        </form>
+    </div>
+
+    <div class = "tag_h1_h6">
+        <b>H1...H6 (Utilizadas para criar cabeçalhos de diferentes tamanhos)</b><br/><br/>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+    </div>
+
+    <div class = "tag_head">
+        <b>HEAD (Seção Head, nela são inseridas informações adicionais sobre a página)</b><br/><br/>
+        <p>A seção head contém informações como: Codificação de caracteres, título da página, endereço do arquivo CSS, entre outras coisas.</p>
+    </div>
+
+    <div class = "tag_header">
+        <b>HEADER (Cabeçalho da página, normalmente contém uma logo ou menu)</b><br/><br/>
+        <p>A tag header deve ser o primeiro elemento na tag body.</p>
+    </div>
+
+    <div class = "tag_hr">
+        <b>HR (Cria uma linha horizontal para separar diferentes assuntos na página)</b><br/><br/>
+        <p>Assunto 1</p>
+        <hr/>
+        <p>Assunto 2</p>
+        <hr/>
+        <p>Assunto 3</p>
+        <hr/>
+        <p>Assunto 4</p>
+        <hr/>
+    </div>
+
+    <div class = "tag_html">
+        <b>HTML (Elemento raiz do documento, deve ser inserido logo após o DOCTYPE)</b><br/><br/>
+        <p>Na tag HTML, são inseridos todos os outros elementos da página.</p>
+    </div>
+
+    <div class = "tag_i">
+        <b>I (Utilizada para marcar texto em itálico)</b><br/><br/>
+        <p><i>Texto em itálico.</i></p>
+    </div>
+
+    <div class = "tag_iframe">
+        <b>IFRAME (Utilizada para inserir outra página web dentro da página atual)</b><br/><br/>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="W3Schools Free Online Web Tutorials" width = "600" height = "400">Seu navegador não suporta iframe
+        </iframe>
+    </div>
+
+    <div class = "tag_img">
+        <b>IMG (Utilizada para inserir uma imagem no documento)</b><br/><br/>
+        <img src="assets/images/kurisu.jpg" alt="kurisu" width = "200" height = "200"/>
+    </div>
+
+    <div class = "tag_input">
+        <b>INPUT (Insere um componente para entrada de dados por parte do usuário, como uma caixa de texto)</b><br/><br/>
+        <input type = "text" placeholder = "Input Text"/>
+        <input type = "email" placeholder = "Input Email"/>        
+        <input type = "password" placeholder = "Input Password"/>
+        <input type = "date" placeholder = "Input Date"/>
+    </div>
+
+    <div class = "tag_ins">
+        <b>INS (Utilizada para marcar um texto que foi inserido, é o oposto do texto removido da tag del)</b><br/><br/>
+        <p>Minha cor favorita é <del>azul</del> <ins>vermelho</ins>!</p>
+    </div>
+
+    <div class = "tag_kbd">
+        <b>KBD (Utilizada para marcar texto referente a entradas de teclado, por exemplo, atalhos como CTRL + C e CTRL + V)</b><br/><br/>
+        <p>Pressione <kbd>CTRL + C</kbd> para copiar texto.</p>
+    </div>
+
+    <div class = "tag_label">
+        <b>LABEL (Coloca um rótulo ao lado de um input)</b><br/><br/>
+        <label>Nome
+            <input type = "text"/>
+        </label>
+
+        <br/><br/>
+
+        <label>Sobrenome
+            <input type = "text"/>
+        </label>
+    </div>
+
+    <div class = "tag_legend">
+        <b>LEGEND (Título do conjunto de inputs criado com a tag fieldset)</b><br/><br/>
+
+        <form>
+            <fieldset>
+                <legend>Legend</legend>
+                <input type="text" placeholder="Nome"><br><br>
+                <input type="text" placeholder = "Sobrenome"><br><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>        
+    </div>
+
+    <div class = "tag_li">
+        <b>LI (Insere um item em uma lista)</b><br/><br/>
+
+        <ul>
+            <li>Primeiro LI</li>
+            <li>Segundo LI</li>
+            <li>Terceiro LI</li>
+        </ul>
+    </div>
+
+    <div class = "tag_link">
+        <b>LINK (Define o relacionamento entre o documento atual e uma fonte externa, é usado principalmente para anexar uma folha de estilo CSS)</b><br/><br/>
+
+        <code>link rel = "stylesheet" type = "text/css" href = "assets/css/style.css"</code>
+    </div>
+
+    <div class = "tag_main">
+        <b>MAIN (Contém a parte principal do documento)</b><br/><br/>
+
+        <p>Assim como o header contém tudo que está relacionado ao cabeçalho e o footer contém o que está relacionado ao rodapé, o main deve estar entre os dois, contendo todo o conteúdo principal da página.</p>
+    </div>
+
+    <div class = "tag_map">
+        <b>MAP (Utilizada para criar um mapa de imagem, ou seja, uma imagem com áreas clicáveis)</b><br/><br/>
+
+        <p>Área superior esquerda e inferior direita clicáveis.<br/></p>
+        <img src="assets/images/kurisu.jpg" alt="Kurisu" usemap="#makisekurisu" width="300" height="300"/>
+
+        <map name="makisekurisu">
+            <area shape="rect" coords="0, 0, 150, 150" alt="quadrado" href="https://www.google.com">
+            <area shape="rect" coords="150, 150, 300, 300" alt="circulo" href="https://www.google.com">
+        </map>        
+    </div>
+
+    <div class = "tag_mark">
+        <b>MARK (Cria um efeito de caneta marca texto)</b><br/><br/>
+
+        <p><mark>Caneta marca texto</mark></p> 
+    </div>
+
+    <div class = "tag_meta">
+        <b>META (Utilizada para definir características importantes do documento, por exemplo, codificação de caracteres)</b><br/><br/>
+
+        <p>A tag meta deve estar dentro da seção head do documento.</p>        
+    </div>
+
+    <div class = "tag_meter">
+        <b>METER (Cria uma barra utilizada para representar uma medida escalar ou um valor fracionário, não deve ser utilizada como barra de progresso)</b><br/><br/>
+
+        <label>
+            Uso do disco local C:
+            <meter value="2" min="0" max="10">2 out of 10</meter>
+        </label>
+        <br/><br/>
+        <label>
+            Uso do disco local D:
+            <meter value="0.6">60%</meter>
+        </label>
+    </div>
+
+    <div class = "tag_nav">
+        <b>NAV (Utilizada para criar o menu de navegação da página)</b><br/><br/>
+
+        <nav>
+            <a href="">HTML</a> |
+            <a href="">CSS</a> |
+            <a href="">JavaScript</a> |
+            <a href="">Python</a>
+        </nav>        
+    </div>
+
+    <div class = "tag_noscript">
+        <b>NOSCRIPT (Define um conteúdo a ser exibido caso o computador do usuário ou navegador não seja capaz de rodar um script)</b><br/><br/>
+        
+        <script>
+            document.write("Hello World!")
+        </script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+    </div>
+
+    <div class = "tag_object">
+        <b>OBJECT (Define um container para um conteúdo externo)</b><br/><br/>
+
+        <object data="assets/images/kurisu.jpg" width="300" height="200"></object>          
+    </div>
+
+    <div class = "tag_ol">
+        <b>OL (Cria uma lista ordenada, numéricamente ou alfabeticamente)</b><br/><br/>
+
+        <ol type = "1">
+            <li>Banana</li>
+            <li>Laranja</li>
+            <li>Maçã</li>
+        </ol>  
+        
+        <ol type = "A">
+            <li>Abacate</li>
+            <li>Damasco</li>
+            <li>Limão</li>
+        </ol>  
+    </div>
+
+    <div class = "tag_optgroup">
+        <b>OPTGROUP (Usada para agrupar informações relacionadas em uma drop-down list)</b><br/><br/>
+
+        <form action="/action_page.php">
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+              <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+              </optgroup>
+              <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </optgroup>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class = "tag_option">
+        <b>OPTION (Define uma opção em uma lista de seleção/drop-down list/datalist)</b><br/><br/>
+
+        <label>
+            Escolha seu carro (Option):
+            <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+        </label>
+    </div>
+
+    <div class = "tag_output">
+        <b>OUTPUT (Utilizada para apresentar o resultado de um cálculo)</b><br/><br/>
+
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="number" id="a"> +       
+            <input type="number" id="b">
+            = <output name="x" for="a b"></output>
+        </form>
+    </div>
+
+    <div class = "tag_p">
+        <b>P (Utilizada para marcar um parágrafo)</b><br/><br/>
+
+        <p>Este é o parágrafo 1</p>
+        <p>Este é o parágrafo 2</p>
+        <p>Este é o parágrafo 3</p>
+        <p>Este é o parágrafo 4</p>
+        <p>Este é o parágrafo 5</p>
+    </div>
+
+    <div class = "tag_param">
+        <b>PARAM (Utilizada para definir parâmetros em uma tag object)</b><br/><br/>
+
+        <object data="assets/media/alloutlife.mp3">
+            <param name="autoplay" value = "true">
+        </object>
+    </div>
+
+    <div class = "tag_picture">
+        <b>PICTURE (Define um container para multiplas imagens onde cada imagem vai ser exibida em condições especificas)</b><br/><br/>
+
+        <p>A tag picture é muito utilizada com layouts responsivos onde as imagens devem se adequar ao tamanho da tela.</p>
+    </div>
+
+    <div class = "tag_pre">
+        <b>PRE (Define um texto pré formatado, ou seja, que respeita o número de espaçamentos e quebras de linha)</b><br/><br/>
+
+        <pre>Texto que    respeita    todos os     espaçamentos.</pre>
+    </div>
+
+    <div class = "tag_progress">
+        <b>PROGRESS (Utilizada para inserir uma barra de progresso que será manipulada com javascript)</b><br/><br/>
+
+        <label>Progresso de Download:
+            <progress value="32" max="100">32%</progress>
+        </label>      
+    </div>
+
+    <div class = "tag_q">
+        <b>Q (Utilizada para criar citações curtas)</b><br/><br/>
+
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q>
+        We hope they succeed.</p>  
+    </div>
+    
+    <div class = "tag_ruby_rp_rt">
+        <b>RUBY (Utilizada para inserir uma anotação ruby, que é um pequeno texto extra que indica a pronúncia ou significado dos caracteres correspondentes, esse tipo de anotação é muito utilizado em idiomas orientais como o japônes)</b><br/><br/>
+
+        <b>RP (Define o que mostrar em navegadores que não suportam anotações ruby)</b><br/><br/>
+
+        <b>RT (Texto de explicação de significado ou pronuncia da anotação Ruby)</b><br/><br/>
+
+        <ruby>
+            漢 <rt> ㄏㄢˋ </rt>
+        </ruby>
+    </div>
+
+    <div class = "tag_s">
+        <b>S (Define texto que não está mais correto)</b><br/><br/>
+
+        <p><s>Apenas 50 tickets restantes!</s></p>
+        <p>Esgotado!</p>
+    </div>
+
+    <div class = "tag_samp">
+        <b>SAMP (Define uma mensagem gerada por computador)</b><br/><br/>
+
+        <p>Mensagem do meu computador:</p>
+
+        <p><samp>Arquivo não encontrado.<br/>Pressione F1 para continuar.</samp></p>
+    </div>
+
+    <div class = "tag_script">
+        <b>SCRIPT (Utilizada para inserir um script client-side, geralmente JavaScript)</b><br/><br/>
+
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script> 
+    </div>
+
+    <div class = "tag_section">
+        <b>SECTION (Define uma área especifica do documento)</b><br/><br/>
+
+        <p>Assim como as tags header, main e footer, a tag section também se destina a agrupar elementos de uma região especifica, no caso, as diferentes áreas do conteúdo principal (main).</p>
+    </div>
+
+    <div class = "tag_select">
+        <b>SELECT (Cria uma drop-down list)</b><br/><br/>
+
+        <label>Drop-down List:
+            <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </label>        
+    </div>
+
+    <div class = "tag_small">
+        <b>SMALL (Utilizada para inserir textos pequenos, como notas de rodapé e direitos autorais)</b><br/><br/>
+
+        <p>Isso é um texto normal.</p>
+        <p><small>Isso é texto criado com a tag small.</small></p>  
+    </div>
+
+    <div class = "tag_source">
+        <b>SOURCE (Utilizada para especificar multiplas fontes para arquivos de midia, como audios, imagens e videos)</b><br/><br/>
+
+        <audio controls>
+            <source src="assets/media/alloutlife.mp3" type="audio/mp3">            
+            Seu navegador não suporta o elemento audio.
+        </audio>
+    </div>
+
+    <div class = "tag_span">
+        <b>SPAN (Funciona como um container para outros elementos, mas diferentemente da div, que é um elemento de nível de bloco, o span é um elemento inline)</b><br/><br/>
+
+        <span>Span 1</span>       
+        <span>Span 2</span>
+        <span>Span 3</span>
+    </div>
+
+    <div class = "tag_strong">
+        <b>STRONG (Utilizada para criar texto em negrito e forte enfâse)</b><br/><br/>
+
+        <p><strong>Texto em negrito e forte ênfase.</strong></p>
+    </div>
+
+    <div class = "tag_style">
+        <b>STYLE (Utilizada para aplicar efeitos CSS de forma interna ou inline)</b><br/><br/>
+
+        <p style = "color:red;">Texto com cor vermelha utilizando CSS inline, ou seja, diretamente na abertura da tag que irá receber o efeito.</p>
+
+        <p>Texto com cor azul utilizando CSS interno, ou seja, aplicando o efeito na tag style dentro da seção head do documento.</p>
+    </div>
+
+    <div class = "tag_sub_sup">
+        <b>SUB/SUP (Utilizadas para criar textos pequenos com alinhamento inferior ou superior em relação a linha)</b><br/><br/>
+
+        <p>Texto Normal <sub>Texto SUB </sub><sup>Texto SUP</sup>.</p>
+    </div>
+
+    <div class = "tag_summary">
+        <b>SUMMARY (Utilizada para criar o texto inicial que estará sempre visível e será clicado na tag details)</b><br/><br/>
+
+        <details>
+            <summary>Summary</summary>
+            <p>Texto da tag Details</p>
+        </details>        
+    </div>
+
+    <div class = "tag_svg">
+        <b>SVG (Utiizada para criar um container para gráficos SVG, uma forma de desenhar gráficos e figuras geométricas)</b><br/><br/>
+
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>               
+    </div>
+
+    <div class = "tag_table">
+        <b>TABLE (Utiizada para criar uma tabela)</b><br/><br/>
+
+        <table>
+            <tr>
+              <th>Month</th>
+              <th>Savings</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$200</td>
+              </tr>
+          </table>           
+    </div>
+
+    <div class = "tag_tbody_thead_tfoot">
+        <b>TBODY/THEAD/TFOOT (Utiizadas para determinar as diferentes partes de uma tabela, cabeçalho (thead), corpo (tbody) e rodapé (tfoot))</b><br/><br/>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>THEAD</th>
+                    <th>THEAD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TBODY</td>
+                    <td>TBODY</td>
+                </tr>
+                <tr>
+                    <td>TBODY</td>
+                    <td>TBODY</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TFOOT</td>
+                    <td>TFOOT</td>
+                </tr>
+            </tfoot>
+          </table>        
+    </div>
+
+    <div class = "tag_td_th_tr">
+        <b>TD/TH/TR (TD (Cria uma coluna no corpo ou rodapé da tabela), TH (Cria uma coluna no header da tabela), TR (Cria uma linha em qualquer parte da tabela))</b><br/><br/>
+
+        <table>
+            <tr>
+                <th>TH1/TR1</th>
+                <th>TH2/TR1</th>
+            </tr>
+            <tr>
+                <td>TD1/TR2</td>
+                <td>TD2/TR2</td>
+            </tr>
+            <tr>
+                <td>TD1/TR3</td>
+                <td>TD2/TR3</td>
+            </tr>
+        </table>           
+    </div>
+
+    <div class = "tag_template">
+        <b>TEMPLATE (Utiizadas para criar um container que estará oculto ao carregar a página, sendo necessária a utilização de JavaScript para exibição)</b><br/><br/>
+
+        <button onclick="showContent()">Mostrar Template</button>
+
+        <p>(Veja o final da página ao clicar no botão)</p>
+
+        <template>
+            <h1>TEMPLATE</h1>
+            <img src="assets/images/kurisu.jpg" width="300" height="200">
+        </template>
+
+        <script>
+            function showContent() {
+                var temp = document.getElementsByTagName("template")[0];
+                var clon = temp.content.cloneNode(true);
+                document.body.appendChild(clon);
+            }
+        </script>
+    </div>
+
+    <div class = "tag_textarea">
+        <b>TEXTAREA (Utiizadas para criar uma caixa de texto multilinha)</b><br/><br/>
+    
+        <textarea rows="5" cols="50">
+            Digite seu texto aqui...
+        </textarea>        
+    </div>
+
+    <div class = "tag_time">
+        <b>TIME (Utiizada para inserir uma data ou horário)</b><br/><br/>
+    
+        <p>Abertura: <time>10:00</time><br/> Fechamento: <time>21:00</time><br/>SEG - SÁB</p>
+        <p>Eu tenho um compromisso nessa <time datetime="2020-07-25 20:00">data</time> (Neste exemplo, a data exata está definida internamente).</p>       
+    </div>
+
+    <div class = "tag_title">
+        <b>TITLE (Define o título do documento, que será exibido no nome da aba em um navegador)</b><br/><br/>
+    
+        <p>A tag title deve ser inserida na seção head. O title deste documento é "Tags HTML".</p>        
+    </div>
+
+    <div class = "tag_track">
+        <b>TRACK (Insere legendas em um arquivo de áudio ou vídeo)</b><br/><br/>
+    
+        <p>Com a tag track, é possível inserir legendas em diferentes idiomas. Note que é necessária a criação de um arquivo de legendas do tipo WebVTT (.vtt)</p>        
+    </div>
+
+    <div class = "tag_u">
+        <b>U (Insere uma underline em um trecho de texto)</b><br/><br/>
+    
+        <p>Texto com <u>UNDERLINE</u>.</p>        
+    </div>
+
+    <div class = "tag_ul">
+        <b>UL (Insere uma lista não ordenada (Unordered List))</b><br/><br/>
+    
+        <ul>
+            <li>Laranja</li>
+            <li>Banana</li>
+            <li>Maçã</li>
+            <li>Morango</li>
+            <li>Abacaxi</li>
+        </ul>        
+    </div>
+
+    <div class = "tag_var">
+        <b>VAR (Define uma variável em programação ou expressão matemática)</b><br/><br/>
+    
+        <p>A área do triângulo é: 1/2 x <var>b</var> x <var>h</var>, onde <var>b</var> é a base, e <var>h</var> é a altura vertical. (b e h são as variáveis)</p>
+    </div>
+
+    <div class = "tag_video">
+        <b>VIDEO (Insere um vídeo no documento)</b><br/><br/>
+    
+        <video width="320" height="240" controls>
+            <source src="assets/media/carrinho.mp4" type="video/mp4">
+            Seu computador não tem suporte para a tag vídeo.
+        </video>
+    </div>
+
+    <div class = "tag_wbr">
+        <b>WBR (WORD BREAK OPPORTUNITY - Indica um ponto do texto que seria possível inserir uma quebra de linha)</b><br/><br/>
+
+        <p>Quando uma palavra é muito longa, o navegador pode acabar quebrando a mesma em um ponto inadequado,utilizar a tag WBR ajuda a evitar que isso aconteça.</p>        
+    </div>
+</body>
+</html>
